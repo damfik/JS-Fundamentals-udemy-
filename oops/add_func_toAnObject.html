@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Add Function to an Object</title>
+	<script>
+		function blogpost(title, text) {
+			this.title = title;
+			this.text = text;
+			this.addCategory = addCategory;
+		}
+
+		function addCategory(category) {
+			this.category = category;
+		}
+
+		var bp1 = new blogpost("JQuery", "Makes JS easier to use");
+		bp1.addCategory("UI Technology");
+		document.write(bp1.title, "<br/>");
+		document.write(bp1.text, "<br/>");
+		document.write(bp1.category, "<br/>");
+
+		var bp2 = new blogpost("AngularJS", "To Build Single Page Apps!");
+		bp2.addCategory("Advanced UI Technology");
+		document.write(bp2.title, "<br/>");
+		document.write(bp2.text, "<br/>");
+		document.write(bp2.category);
+
+	</script>
+</head>
+
+<body>
+	
+</body>
+
+</html>
